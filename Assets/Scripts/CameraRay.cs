@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class CameraRay : MonoBehaviour
 {
     [SerializeField]
@@ -27,11 +28,13 @@ public class CameraRay : MonoBehaviour
         
     }
 
-
+   
     // Update is called once per frame
     void Update()
     {
-         if (Input.GetMouseButtonDown(0))
+        
+
+        if (Input.GetMouseButtonDown(0))
             {
             Collider2D collider = CastRay();
               if(collider != null)
